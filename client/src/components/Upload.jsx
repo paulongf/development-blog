@@ -32,7 +32,7 @@ const Upload = ({ children, type, setProgress, setData }) => {
   };
   const onSuccess = (res) => {
     console.log(res);
-    setData(res.filePath);
+    setData(res.url);
   };
   const onUploadProgress = (progress) => {
     console.log(progress);

@@ -62,7 +62,7 @@ const Write = () => {
     const formData = new FormData(e.target);
 
     const data = {
-      img: cover?.url || "", // garante que existe
+      img: cover || "",
       title: formData.get("title"),
       category: formData.get("category"),
       desc: formData.get("desc"),
@@ -78,7 +78,10 @@ const Write = () => {
       <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 mb-6">
         {/* Upload da capa */}
         <Upload type="image" setProgress={setProgress} setData={setCover}>
-          <button className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white">
+          <button
+            type="button" // ✅ impede que o form seja enviado
+            className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white"
+          >
             Add a cover image
           </button>
         </Upload>

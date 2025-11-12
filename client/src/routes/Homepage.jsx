@@ -10,18 +10,19 @@ const Homepage = () => {
       <div className="flex gap-4">
         <Link to="/">Home</Link>
         <span>•</span>
-        <span className="text-blue-800">Blogs and Articles</span>
+        <span className="text-blue-800">Blogs e Artigos</span>
       </div>
       {/* INTRODUCTION */}
       <div className="flex items-center justify-between">
         {/* titles */}
         <div className="">
           <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Explore ideias e conceitos em tecnologia, design e marketing
           </h1>
           <p className="mt-8 text-md md:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            rerum accusantium.
+            Mergulhe em artigos sobre programação, arquitetura de software,
+            design minimalista, marketing. Aprenda, inspire-se e compartilhe
+            conhecimento.
           </p>
         </div>
         {/* animated button */}
@@ -30,7 +31,6 @@ const Homepage = () => {
             viewBox="0 0 200 200"
             width="200"
             height="200"
-            // className="text-lg tracking-widest animate-spin animatedButton"
             className="text-lg tracking-widest"
           >
             <path
@@ -40,10 +40,10 @@ const Homepage = () => {
             />
             <text>
               <textPath href="#circlePath" startOffset="0%">
-                Write your story •
+                Escreva sua história •
               </textPath>
               <textPath href="#circlePath" startOffset="50%">
-                Share your idea •
+                Partilhe suas ideias •
               </textPath>
             </text>
           </svg>

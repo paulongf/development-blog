@@ -29,7 +29,7 @@ const PostListItem = ({ post }) => {
         </div>
         <p>{post.desc}</p>
         <Link to={`/${post.slug}`} className="underline text-blue-800 text-sm">
-          Read More
+          Ler Mais
         </Link>
       </div>
     </div>
