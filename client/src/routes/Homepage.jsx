@@ -17,11 +17,11 @@ const Homepage = () => {
         {/* titles */}
         <div className="">
           <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
-            Explore ideias e conceitos em tecnologia, design e marketing
+            Explore Ideias e Conceitos em Tecnologia, Design e Marketing
           </h1>
           <p className="mt-8 text-md md:text-xl">
             Mergulhe em artigos sobre programação, arquitetura de software,
-            design minimalista, marketing. Aprenda, inspire-se e compartilhe
+            design minimalista e marketing. Aprenda, inspire-se e compartilhe
             conhecimento.
           </p>
         </div>

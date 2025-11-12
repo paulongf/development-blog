@@ -60,7 +60,7 @@ const FeaturedPosts = () => {
             {posts[1].img && (
               <div className="w-1/3 aspect-video">
                 <Image
-                  src={posts[1].img}
+                  path={posts[1].img}
                   className="rounded-3xl object-cover w-full h-full"
                   w="298"
                 />
@@ -92,7 +92,7 @@ const FeaturedPosts = () => {
             {posts[2].img && (
               <div className="w-1/3 aspect-video">
                 <Image
-                  src={posts[2].img}
+                  path={posts[2].img}
                   className="rounded-3xl object-cover w-full h-full"
                   w="298"
                 />
@@ -124,7 +124,7 @@ const FeaturedPosts = () => {
             {posts[3].img && (
               <div className="w-1/3 aspect-video">
                 <Image
-                  src={posts[3].img}
+                  path={posts[3].img}
                   className="rounded-3xl object-cover w-full h-full"
                   w="298"
                 />
