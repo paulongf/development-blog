@@ -1,15 +1,17 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for development-blog",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["blog", "backend", "node", "express"],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "@clerk/express": "^1.7.46",
     "body-parser": "^2.2.0",
@@ -21,5 +23,8 @@
     "imagekitio-react": "^4.3.0",
     "mongoose": "^8.19.3",
     "svix": "^1.81.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
