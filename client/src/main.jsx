@@ -58,7 +58,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ClerkProvider
       publishableKey={PUBLISHABLE_KEY}
-      frontendApi="clerk.gamafilhoblog.click" // seu domínio Clerk verificado
+      frontendApi="gamafilhoblog.click" // seu domínio Clerk verificado
       navigate={(to) => router.navigate(to)} // opcional, para integração com react-router
     >
       <QueryClientProvider client={queryClient}>
