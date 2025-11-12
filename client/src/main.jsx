@@ -56,7 +56,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider
+      publishableKey={PUBLISHABLE_KEY}
+      frontendApi="https://clerk.gamafilhoblog.click" // seu domínio Clerk verificado
+      navigate={(to) => router.navigate(to)} // opcional, para integração com react-router
+    >
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
         <ToastContainer position="bottom-right" />
